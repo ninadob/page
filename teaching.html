@@ -1,115 +1,15 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+---
+layout: default
+---
 
-    <title>Nina Dobrushina's personal page</title>
+<div class="teaching">
+  <h2>Teaching experience</h2>
+  <ul>
+    {% for position in site.data.teaching.positions %}
+    <li>
+      {{ position }}
+    </li>
+    {% endfor %}
+  </ul>
+</div>
 
-    <link rel="stylesheet" href="./static/css/bootstrap-4.5.2.min.css" type="text/css">
-
-    <script type="text/javascript" src="./static/js/jquery-2.2.4.min.js"></script>
-    <script type="text/javascript" src="./static/js/bootstrap.bundle-4.5.2.min.js"></script>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
-    <script src="https://kit.fontawesome.com/7d5e6d7016.js" crossorigin="anonymous"></script>
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
-
-    <link rel="stylesheet" href="./static/css/styles.css" type="text/css">
-
-  </head>
-  <body>
-    <div class="container-fluid main_body">
-      <!-- <img src="./static/img/ava.jpg" height="10em"> -->
-    	<div class="row">
-        <div class="column left">
-          <img src="./static/img/ava.jpg" height="200em">
-          <div class="interests">
-            <h2>Fields of interest</h2>
-            <ul style="padding-left: 1.5em;">
-              <li>linguistics</li>
-              <li>typology</li>
-              <li>morphology</li>
-              <li>mood and modality</li>
-              <li>minority languages</li>
-              <li>Nakh-Dagestanian languages</li>
-              <li>sociolinguistics</li>
-              <li>small-scale multilingualism</li>
-              <li>language contacts</li>
-              <li>language variation</li>
-              <li>language corpora</li>
-            </ul>
-          </div>
-        </div>
-        <div class="column right">
-          <div class="name">
-            <h1>Nina Dobrushina (Нина Добрушина)</h1>
-          </div>
-          <div class="little" style="margin-bottom: 1.5em;">
-            <img src="./static/img/ava.jpg" height="150em">
-          </div>
-          <div class="position">
-            <i class="fa fa-building-columns"></i> University of Hamburg, <b>research fellow</b>
-          </div>
-          <div class="contacts">
-            <div>
-              <i class="fa fa-envelope"></i>
-              <a class="email" href="mailto:nina.dobrushina@gmail.com"> nina.dobrushina@gmail.com</a>
-            </div>
-          </div>
-          <div class="cv">
-            <i class="fa fa-file"></i> <a href="#" onclick="event.preventDefault();window.open('CV_NDobrushina 2022.doc')">CV</a>
-          </div>
-
-          <nav class="navbar navbar-expand-xl" style="padding: 0;">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item" onclick="location.href='/page/';">Home</li>
-              <li class="nav-item" onclick="location.href='/page/education_and_positions';">Education and positions</li>
-              <li class="nav-item current" onclick="location.href='/page/teaching';">Teaching</li>
-              <li class="nav-item" onclick="location.href='/page/publications/';">Publications</li>
-              <li class="nav-item" onclick="location.href='/page/invited';">Invited lectures, plenaries, conferences</li>
-              <!-- <li class="nav-item" onclick="window.open('CV_NDobrushina 2022.doc')">cv</li> -->
-            </ul>
-          </nav>
-
-          <div class="teaching">
-            <h2>Teaching experience</h2>
-            <ul>
-              <li>
-                Sociolinguistics for BA students,
-                Sociolinguistics for MA students,
-                Theoretical grammar of Russian language for BA students,
-                Academic writing for BA students, Russian language for foreign students;
-                all in HSE University, 2003&ndash;2022.
-              </li>
-              <li>
-                Structural and sociolinguistic diversity in highland Daghestan. Summer school, Hamburg University. 
-                1 July 2022, together with Michael Daniel.
-              </li>
-              <li>
-                Language typology and language contact: insights from phonology, lexicon and grammar.
-                University of Pavia. November 3&ndash;4, 2021, together with Michael Daniel and Eitan Grossman.
-              </li>
-              <li>
-                Atelier Morphosyntaxe on Imperatives and Commands.
-                Laboratoire dynamique du langage (Lyon),
-                February&ndash;April 2017, together with Marine Vuillermet.
-              </li>
-              <li>
-                Caucasian studies meet quantitative sociolinguistics,
-                Batumi International Summer School on Digital Caucasiology,
-                1&ndash;8 October 2019, together with Michael Daniel.
-              </li>
-            </ul>
-          </div>
-          
-        </div>
-      </div>
-    </div>
-
-  </body>
-</html>
