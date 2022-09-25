@@ -28,11 +28,10 @@ layout: default
     Ongoing projects
   </h2>
   <ul>
-    <li>Multilingualism of Dagestan (<a href="https://multidagestan.com" target="_blank">https://multidagestan.com</a>)</li>
-    <li>Grammar of Rutul </li>
-    <li>Non-indicative moods in Nakh-Dagestanian languages</li>
+    {% for project in site.data.general.projects %}
+    <li> {{ project }} </li>
+    {% endfor %}
   </ul>
   <h2>Linguistic field trips</h2>
-  Mehweb, Godoberi, Bagvalal,
-        Tsakhur, Archi, Rutul, Tatar, Chuvash, Balkar, Khakas, Ustja River basin dialect of Russian</td>
+  Mehweb, Godoberi, Bagvalal, Tsakhur, Archi, Rutul, Tatar, Chuvash, Balkar, Khakas, Ustja River basin dialect of Russian
 </div>
