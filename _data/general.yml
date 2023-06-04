@@ -19,8 +19,10 @@ fields:
 
 
 associations:
+  - Member of the Academia Europaea
   - Association for Linguistic Typology
   - Societas Linguistica Europaea
+  
 
 
 projects:
