@@ -5,133 +5,23 @@ layout: default
 <div class="plenary">
   <h2>Invited lectures and plenary talks</h2>
   <table>
+    {% for lecture in site.data.lectures.invited %}
     <tr>
-      <td><b>May 24, 2022</b></td><td> University of Kiel. Linguistic diversity, marriage patterns and multilingualism in highland Daghestan.</td>
+      <td style="width: 10em;"><b>{{lecture.year}}</b></td><td> {{lecture.place}} </td>
     </tr>
-
-    <tr>
-      <td><b>November 4, 2021</b></td><td> University of Pavia. Nakh-Daghestanian optatives in morphology and discourse.</td>
-    </tr>
-
-    <tr>
-      <td><b>November 3, 2021</b></td><td> University of Pavia. Optatives in the Caucasus: evidence for contact origin.</td>
-    </tr>
-
-    <tr>
-      <td><b>30 November, 2019</b></td><td> Conference "The languages of Russia in contact with the Russian language: phenomena of morphological and semantic interference", Institute of Russian language named after V. V. Vinogradov RAN. The spread of Russian language in Dagestan in the 20th century: quantitative approach. Plenary talk.</td>
-    </tr>
-
-    <tr>
-      <td><b>February 22, 2019</b></td><td> New-York University, Field research of multilingualism and language contact in Dagestan.</td>
-    </tr>
-
-    <tr>
-      <td><b>December 7, 2018</b></td><td> University of Vienna, Russian corpora as a resource for teachers and researchers</td>
-    </tr>
-
-    <tr>
-      <td><b>23&ndash;25 November, 2018</b></td><td> XIV Conference on typology and grammar for young researchers, Institute of Linguistic Research, Saint Petersburg. Fear complement clauses in typological perspective. Plenary talk</td>
-    </tr>
-
-    <tr>
-      <td><b>November, 2017</b></td><td> Laboratoire dynamique de langage (CNRS, Lyon). Multilingualism and linguistic diversity in Daghestan</td>
-    </tr>
-
-    <tr>
-      <td style="width: 10em;"><b>12&ndash;14 April, 2017</b></td><td> Historical Linguistics of the Caucasus, Paris, École Pratique des Hautes Études. Multilingualism and linguistic diversity in Daghestan: a retrospective field research. Plenary talk</td>
-    </tr>
+    {% endfor %}
     
-    <tr>
-      <td><b>February 23, 2017</b></td><td> University of Milan. Сослагательное наклонение в условно-уступительных конструкциях: ирреалис для выражения хабитуальности.</td>
-    </tr>
-
-    <tr>
-      <td><b>February 22, 2017</b></td><td> University of Pavia. Multilingualism and linguistic diversity in Daghestan: a retrospective field research</td>
-    </tr>
-
-    <tr>
-      <td><b>February 21, 2017</b></td><td> University of Pavia. 'Fear' complement clauses in typological perspective</td>
-    </tr>
-
-    <tr>
-      <td><b>February 19, 2016</b></td><td> University of Pavia. On the way from subjunctive to complementizer.</td>
-    </tr>
-
-    <tr>
-      <td><b>June 12, 2012 </b></td><td> University of Regensburg, Subjunctive in complement clauses</td>
-    </tr>
-
-    <tr>
-      <td><b>November 30, 2010</b></td><td> University of Bern, An atlas of language contacts in Dagestan: a pilot project (together with Mikhail Daniel)</td>
-    </tr>
-
-    <tr>
-      <td><b>November 29, 2010 </b></td><td> Max Plank Institute of Evolutionary Anthropology (Leipzig), An atlas of language contacts in Dagestan: a pilot project (together with Mikhail Daniel)</td>
-    </tr>
-
-    <tr>
-      <td><b>April 8, 2010</b></td><td> Научный семинар факультета антропологии Европейского университета (Санкт-Петербург), Типология контактных ситуаций в Дагестане</td>
-    </tr>
-
-    <tr>
-      <td><b>February 17, 2010</b></td><td> Научный семинар Института мировой культуры МГУ "Вести с полей", Типология контактных ситуаций в Дагестане </td>
-    </tr>
-
-    <tr>
-      <td><b>April 29, 2009</b></td><td> Department of Slavonic and Baltic languages and literatures (University of Helsinki), “Multilingualism in Dagestan: field research of a minor language” (in Russian).</td>
-    </tr>
-
-    <tr>
-      <td><b>April 28, 2009</b></td><td> Brown Bag Seminar (HCAS, Helsinki University), “The role of language in minority survival”</td>
-    </tr>
-
-    <tr>
-      <td><b>April 14, 2009</b></td><td> Aleksanteri Institute (Helsinki University), “Innovations in a traditional society of mountain Dagestan: a field research”</td>
-    </tr>
-
-    <tr>
-      <td><b>April 2, 2009</b></td><td> University of Tromso (Department of language and linguistics), “From strong imperative to apprehension” (in Russian)</td>
-    </tr>
-
-    <tr>
-      <td><b>March 11, 2009</b></td><td> Department of Slavonic and Baltic languages and literatures (University of Helsinki), “The semantics of Russian subjunctive” (in Russian)</td>
-    </tr>
-
-    <tr>
-      <td style="width: 10em;"><b>November 27, 2008</b></td><td> University of Stockholm "Multilingualism and polyethnicity in Archi: data from a sociolinguistic questionnaire" </td>
-    </tr>
   </table>
 </div>
 
 <div class="organization">
   <h2>Organization of the conferences and meetings</h2>
   <table>
+        {% for lecture in site.data.lectures.meetings %}
     <tr>
-      <td><b>November&ndash;December 2021</b></td><td> Online course on East Caucasian languages, Linguistic convergence laboratory, HSE University</td>
-      </tr>
-      <tr>
-      <td><b>October&ndash;December 2020</b></td><td> Online course on East Caucasian languages, Linguistic convergence laboratory, HSE University</td>
-      </tr>
-      <tr>
-      <td><b>April 15&ndash;17, 2019</b></td><td> International conference “Typology of small-scale multilingualism”, Lyon, University of Lyon</td>
-      </tr>
-      <tr>
-      <td><b>September 9&ndash;15, 2018</b></td><td> International Summer school “Areal linguistics and languages of Russia”, Moscow</td>
-      </tr>
-      <tr>
-      <td><b>April 19&ndash;20, 2007</b></td><td> International conference “National Russian Corpus in Teaching Humanities”, Moscow</td>
-      </tr>
-      <tr>
-      <td><b>April 17&ndash;18, 2006</b></td><td> Workshop for teachers of Russian language “National Russian Corpus in Teaching Humanities”, Moscow </td>
-      </tr>
-    
-    <tr>
-      <td style="width: 10em;"><b>June 27&ndash;30, 2006</b></td><td> Workshop on endangered languages in International Symposium on the Grammar and Pragmatics of Complex Sentences (Subordination and Coordination), LENCA III, Tomsk State Pedagogical University</td>
-      </tr>
-    
-    
-    
-    
+      <td style="width: 10em;"><b>{{lecture.year}}</b></td><td> {{lecture.place}} </td>
+    </tr>
+    {% endfor %}
     
   </table>
 </div>
