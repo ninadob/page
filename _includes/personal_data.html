@@ -2,7 +2,7 @@
   <h1>{{ site.data.general.personal.name }}</h1>
 </div>
 <div class="little" style="margin-bottom: 1.5em;">
-  <img src="/assets/img/ava.jpg" height="150em">
+  <img src="{{ site.baseurl }}/assets/img/ava.jpg" height="150em">
 </div>
 <div class="position">
   <i class="fa fa-building-columns"></i> {{ site.data.general.personal.university }}, <b>{{ site.data.general.personal.position }}</b>
@@ -14,5 +14,5 @@
   </div>
 </div>
 <div class="cv">
-  <i class="fa fa-file"></i> <a href="#" onclick="event.preventDefault();window.open('/CV_NDobrushina 2022.doc')">CV</a>
+  <i class="fa fa-file"></i> <a href="#" onclick="event.preventDefault();window.open('{{ site.baseurl }}/CV_NDobrushina 2022.doc')">CV</a>
 </div>
