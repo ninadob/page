@@ -1,5 +1,6 @@
 ---
 layout: default
+permalink: /
 ---
 
 <div class="title" style="margin-top: 1em;">
@@ -12,6 +13,16 @@ layout: default
 </div>
 
 <div class="titles">
+  <div class="title">
+    <h3>
+      Editorship
+    </h3>
+    <ul>
+      {% for editor in site.data.general.editorship %}
+        <li>{{ editor }}</li>
+      {% endfor %}
+    </ul>
+  </div>
   <div class="title">
     <h3>
       Membership of scientific associations (at present)
